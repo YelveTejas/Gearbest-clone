@@ -1,0 +1,323 @@
+
+<html lang="en">
+    <head>
+      
+        <title>Outdoor</title>
+    </head>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #nav{
+            width:95%;
+            height:2.5cm;
+            
+            margin:auto;
+            justify-content: space-between;
+            display: flex;
+            position: sticky;
+            background-color: white;
+           
+    
+        }
+        #logo{
+            width:8cm;
+            height:80%;
+           
+            
+        }
+        #logo>img{
+            width:100%;
+            height:100%;
+        }
+        #five> div>img{
+            width:100%;
+            height:100%
+        }
+    
+        #search{
+        
+            width:15cm;
+            border: 2px solid yellow;
+            height:1cm;
+            
+            border-radius: 20px;
+        }
+        #info{
+            display:flex;
+            justify-content: space-around;
+            width:25cm;
+            align-items: center;
+        }
+        #search>img{
+            width:1cm;
+            height:90%;
+            margin-left: 0.2cm;
+        
+        }
+    
+        #bar{
+            width:95%;
+            height:1cm;
+            
+            margin: auto;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+            #bar>div{
+            width:20%;
+            height:100%;
+            
+            display: flex;   
+            align-items: center;
+            margin-left: 1cm;
+    
+            }
+        #big{
+            width:95%;
+            height:auto;
+            display: flex;
+            margin: auto;
+            margin-bottom: 2cm;
+            margin-top: 1cm;
+            
+    
+        }
+       
+        
+       #all{
+        width:20%;
+       
+       }
+       #products{
+          
+             width:80%;
+           
+             display: grid;
+             grid-template-columns: repeat(4,1fr);
+             grid-template-rows: auto;
+             gap:20px 10px;
+             width:100%;
+    
+       }
+       #products>div>img{
+        width:100%;
+       }
+       #products>div{
+        
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+       }
+       button{
+            width:100%;
+            height:1cm;
+          background-color: blue;
+            color: white;
+            margin-top: -10px;
+        }
+        h3+p{
+            margin-top: -10px;
+            margin-left: 10px;
+        }
+        img+h3{
+            margin-top: -4px;
+            margin-left: 10px;
+        }
+        select{
+            width:7cm;
+            height:1cm;
+            margin-left: 1cm;
+        }
+        h1{
+            margin-left: 1cm;
+        }
+        #products>div>h4{
+            margin-top: -9px;
+            margin-left: 10px;
+        }
+        #last{
+            width:95%;
+            height:8cm;
+           
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        #last>div{
+            width:20%;
+            height:100%;
+            
+        }
+    
+        #last>div>p{
+            color: #666;
+            margin-top: -5px;
+        }
+        #bottom{
+            width:90%;
+            height:4cm;
+          
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+        #bottom>div{
+            width:18%;
+            height:100%;
+          
+            align-items: center;
+    
+    
+        }
+        #bottom>div:nth-child(1)>img{
+            height:50%;
+            width:100%;
+        
+        }
+        #bottom>div:nth-child(1)>h3{
+            text-align: center;
+        }
+        #bottom p{
+            text-align: center;
+    
+        }
+        #bottom h3{
+            text-align: center;
+            
+        }
+        /* .h4{
+            margin-top: 10px;
+            margin-left: -10px;
+        } */
+       
+       
+    </style>
+    <body>
+        <div id="nav">
+            <div id="logo">
+             <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png">
+            </div>
+            <div id="info">
+             <div id="search">
+                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAMAAACZQ1hUAAAAbFBMVEX///8AAADo6Oj6+vpGRkb39/c/Pz9VVVXt7e3V1dVMTEz09PTi4uLw8PDBwcFjY2PIyMhsbGwNDQ0jIyNxcXGPj4+hoaE4ODgzMzMpKSkWFha0tLReXl7c3Nypqam6urp5eXmGhoaYmJgcHBzQ/8c5AAAFE0lEQVR4nO1bW5uiMAyFcr8JolxUUND//x9Xm6IUdTRtXGb38zzMy9ASmnOSNK2G8cUXX/wvSFgbBC1LrDlebsVBubTrzWqb59vVpraXZRD/TUtY1nu5eQ+vy9hfMSBadKsH7xc4rRfRpy2I+/q5AYC6bz9pAXuwBPm9V07dx1wSFdK7Xa/fZVkWBOc/h95zt+P/9h/xiLU7jdjXL+4+lWWFd3tiu6NXSZtepw+L4Nn8wTG8PtYExCYsrkSwsx+X2cnsKy0WlBZYVyY02euns+uS9XT+YM11Dd4bkA0e8agEwoYZj/67Q5JSKNamMSJ2hXvfXARAIAjkUgSsdgOTLZGKd9YwbqVvBBM0P+LpVYqV0HaHCDt7lbF7QUzNmNlpmGAYOxjdaZkglnOnOv4gHKlhgiB3qT7DXkFSEixQ5VrdhMGZG+WAeYQU5ejYYAGpC8XhMXyCZvprofBSjBKpjiRuAHE0St5YgLh1TRhCzEF9aKxvA/g0VFiIDCoAfRMMA6oPhYqG1wwrktTLajWvxlqSmgBEjhYYH7YiYMMF8UbFr5Grn2xG4NGyTnCDAlUaPQYQHJk1eBG0oTLBMHjyS1FDHJtMmAAuTxdVzLQ5qSuEM3KUMniMPxHuW6MNOvcsLyMqOhMMI0QTwiMMUAAeb0LEgKgmpoMgxObtjdoQqEn37gG2kuEDNkSBGgB5C/FZfOFC0nYO1JWIQoZvCzzSZo7VIMXJdwUNpQmiHkHsVI4fsCFFyr3AZ5iXWCIzUElUUY/B1wGx8fwNfPgNuuDxwSaND46HDP88Tp5I2+9Q1iLiZJwrlH8/I8Du2qLqM3lzhcibQOKO0oYCWz/AfoCwrDYMvl9BdXS4OLeEpzGMF/eo3lp7QmbaV1jg62ooKJd0NvA9k4vrbPXcGWRRysoV9kytSeqMhUqBCqVXSpUylvitniFSZ04UKoMcmbgBvkkYpji7TLzUOZO3JHkrPimqDNaPpKCDEx0Vv6qPnACaMEpfA0NdfWnYGvQGJumcf3BAY1Ax5jqcEblmGZFtFUUBgI57rZU+fTiHUe/+Q9scVXlMAcfUtvoEjNd05lqdl+IoSSfMQK5R7woBH9XPBTkKLSOOmp8gIA5ZOxV3gLhNE9mnvoMljs6XaHUkYuSZkbpdJV/c6giRFUg7uqAT6lbHyTAZilkHc4xK64z0gmFRvbclFqemDL1AZ4yu5Gzfu42SHE/mFKF2p3E3TOWWL4vCaG/fWXAhpq46jLga5sqPPy6rX17vrNWyLZX2TsEpbnfzwgN7GC4s/zASQ2ElshH6l1KMoLlNVzdlxpyRIZbDsjKtbk+El5olDiUjtCV6ubUn3Vysw7TY7w5n7PZFGkr3Kk/ixh6rJCNsbYmesXMf0W2K6lYtOPKVzwrTBHkG65Bun7xZIG8OY7Iwcndc0B69J683+b3GyeOxTMxQW6IAK953D2KAuy7jBw5PZE64REac4fjtvu+WTVhVtpd2fZn5zwgXySQiusZ3gxUlfuS8KC4+wwkk2CRYUUgUDWfCCQqJouHL7iC7X4rClBN06kAgkdWhX1kpGSETk1yib4H9Ck5MgtUsv15xJpyYhZi+nO5mipgTTswSrKZZdB5OTHLHLCvBZE7MJNFJZfXxHzI9gjWptmcxIvkVRY3MCa0b3MrwxxFTu0+jCOtmhD2LPC+4hu152AAQYXtOE877jkucmKeUGRkRzsiFAWw9kyK++OKLfw9/ACPvNK19bxD/AAAAAElFTkSuQmCC">
+             </div>
+             <h2><a style="text-decoration: none;color:black;" href="signin.html">Sing In</a></h2>
+            <h2><a  style="text-decoration: none;color:black;"href="card.html">Cart</a></h2>
+            </div>
+         </div>
+    
+         
+         <div id="bar">
+            <div><h3>Category</h3></div>
+            <div><h3>SUPER DEALS</h3></div>
+            <div><h3>APP ONLY</h3></div>
+            <div><h3>NEW ARRIVAL</h3></div>
+             
+    
+                
+            </div>
+         </div> 
+         <h1 class="h1">Sort out by</h1>
+         <select id="filter">
+            <option value="All">All Products</option>
+            <option value="Oppo">Oppo</option>
+            <option value="One Plus">One Plus</option>
+            <option value="Samsung">Samsung</option>
+            <option value="MI">MI</option>
+            <option value="Boat">Boat</option>
+            
+         </select>
+         <select id="price">
+            <option value="All">Sortout by Price</option>
+            <option value="LTH">Low to High</option>
+            <option value="HTL">High to Low</option>
+         </select>
+         <div id="big">
+            <div id="all">
+                <h4>Industrial & Scientific </h4>
+                <p>3D Printer & Supplies</p>
+                <p>Laser Engraver & CNC</p>
+                
+                <h4>NARROW SEARCH RESULTS</h4>
+                <p>ON SALE</p>
+                <p>IN STOCK</p>
+                
+    
+    
+              
+            </div>
+            
+            
+            <div id="products">
+    
+            </div>
+         </div>
+         <div id="bottom">
+            <div>
+                <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/new-logo.png">
+                <h3>AFFORDABLE QUALITY FUN SHOPPING</h3>
+            </div>
+            <div>
+               
+                <h3>Hign Quality Selection</h3>
+                <p>Total product quality control for peace of mind</p>
+            </div>
+            <div>
+               
+                <h3>Affordable Prices</h3>
+                <p>Factory direct prices for maximum savings</p>
+            </div>
+            <div>
+               
+                <h3>Expressm Shipping</h3>
+                <p>Fast,reliable delivery from global warehouses</p>
+            </div>
+            <div>
+               
+                <h3>Worry-free after sales</h3>
+               <P>Instant access to professional support</P>
+            </div>
+        </div>
+         <div id="last">
+            <div>
+                <h2>Comapany Inforamtion</h2>
+                <p>About Us</p>
+                <p>Top Searches</p>
+                <p>Privacy Policy</p>
+                <p>Intellactual Property Policy</p>
+                <p>Testimonials</p>
+                <p>Contact US</p>
+                <p>Report Secirity Issue</p>
+                <p>Sell on Gearbest</p>
+            </div>
+            <div>
+                <h2>Customer Service</h2>
+                <p>Shipping Information</p>
+                <p>My Favorites</p>
+                <p>FAQ For Newsletter Subscription</p>
+                <p>My Points</p>
+                <p>Warrenty and Return</p>
+                <p>Payment Method</p>
+                <p>Deposit Exansion</p>
+                <p>Sitemap</p>
+                <p>Gearbest Wallet Instruction</p>
+            </div>
+            <div>
+                <h2>Other Business</h2>
+                <p>Partnership Programs</p>
+                <p>Associate Program</p>
+            </div>
+            <div>
+                <h2>DownLoad App!</h2>
+    
+            </div>
+        </div>
+         
+    
+    
+    
+        
+    </body>
+    </html>
+    <script src="./outdoor.js">
+    
+    </script>

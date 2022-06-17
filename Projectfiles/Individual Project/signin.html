@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Sign In</title>
+</head>
+<style>
+    *{
+        font-family: sans-serif;
+    }
+    #signin{
+        width:9cm;
+        height:11cm;
+        margin: auto;
+        
+        margin-top: 4cm;
+        
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    }
+    input{
+       width:97%;
+       height:1cm;
+       margin-top: 17px;
+       border: 3px solid grey;
+      
+       
+
+    }
+    #button{
+        width:100%;
+        background-color: yellow;
+        font-weight: 300;
+        cursor: pointer;
+
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 1cm;
+        padding-top: 1cm;
+    }
+    p{
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div id="signin">
+        <h2>Welcome to Gearbest</h2>
+    <form>
+       
+        <input id="email" placeholder="Mail" type="text">
+        <input id="password" placeholder="Password" type="text">
+        <input id="button"type="SUBMIT" value="submit">
+    </form>
+      <p>If you don't have account <a href="signup.html">Sign up</a> first</p>
+    </div>
+    
+</body>
+</html>
+<script>
+    var form = document.querySelector("form")
+    var userdata=JSON.parse(localStorage.getItem("data"))
+    form.addEventListener("submit",function(element){
+        element.preventDefault();
+        var data={
+            mail:form.email.value,
+            password:form.password.value,
+        }
+        if(userdata==null)
+        {
+            alert("Please signup first")
+        }
+        else if(userdata.mail==data.mail && userdata.password==data.password)
+        {
+            alert("Sign in Successful")
+            window.location.href="home.html"
+        }
+        else{
+            alert("User Does not Exist")
+        }
+
+    })
+
+</script>
