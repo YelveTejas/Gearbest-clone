@@ -24,6 +24,12 @@
   </ul>
 
 <h3>Here are few shots of the project<h3/>
+  <div>
 <img src='https://user-images.githubusercontent.com/103955930/211533068-1d8e6157-65e8-4753-94f2-d0fbd97a6086.png'alt='b'></img>
+<img margintop='1cm' src='https://user-images.githubusercontent.com/103955930/211574209-2380efbc-cb03-4aa1-ae66-89665ca0a2a0.png'alt='b'></img>
+<img margintop='1cm' src='https://user-images.githubusercontent.com/103955930/211574209-2380efbc-cb03-4aa1-ae66-89665ca0a2a0.png'alt='b'></img>
+</div>
+
+
 
 
