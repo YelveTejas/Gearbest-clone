@@ -23,3 +23,7 @@
     
   </ul>
 
+<h3>Here are few shots of the project<h3/>
+<img src='https://user-images.githubusercontent.com/103955930/211533068-1d8e6157-65e8-4753-94f2-d0fbd97a6086.png'alt='b'></img>
+
+
