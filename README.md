@@ -2,7 +2,7 @@
 <h1>Gearbest Clone</h1>
 <P>GearBest is a Chinese company providing wholesale electronics, appliances, apparel, and accessories. Although they sell everything from wallets to dog supplies and even maxi dresses, GearBest is best known for their low prices on wholesale electronics like smartphones, laptops, smartwatches, headphones, and more.</P>
 
-<h3>To Visit my website   <a href='https://kaleidoscopic-phoenix-a0b181.netlify.app/'>Click here</a></h3>
+<h3>To Visit my website   <a href='https://tubular-cupcake-724f4a.netlify.app/'>Click here</a></h3>
 
 <h2>Tech Stack</h2>
 <div>
