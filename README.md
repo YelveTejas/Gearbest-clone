@@ -9,7 +9,7 @@
   <ul>
     <li> HTML</li>
      <li>CSS</li>
-     <li>Javascript/li>
+     <li>Javascript</li>
     
   </ul>
 </div>
