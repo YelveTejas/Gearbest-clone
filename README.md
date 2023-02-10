@@ -18,7 +18,7 @@
     <li>Login</li>
      <li>Sorting</li>
      <li>Filtering</li>
-     <li>Add to card</li>
+     <li>Add to cart</li>
      <li>Sign Up</li>
     
   </ul>
